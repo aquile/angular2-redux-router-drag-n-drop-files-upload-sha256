@@ -1,0 +1,28 @@
+<nav md-tab-nav-bar>
+    <a md-tab-link id="index"
+       routerLinkActive="active"
+       [routerLink]=" ['./table-view'] "
+       [routerLinkActiveOptions]="{exact: true}">
+        Table view
+    </a>
+    <a md-tab-link
+       routerLinkActive="active"
+       [routerLink]=" ['./blocks-view'] "
+       [routerLinkActiveOptions]="{exact: true}">
+        Block view
+    </a>
+    <a md-tab-link
+       routerLinkActive="active"
+       [routerLink]=" ['./image-upload'] "
+       [routerLinkActiveOptions]="{exact: true}">
+        Image upload
+    </a>
+</nav>
+
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+
+<md-footer></md-footer>
